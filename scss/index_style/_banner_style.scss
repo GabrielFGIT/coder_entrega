@@ -1,0 +1,32 @@
+.baner {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+
+      img{
+        display: flex;
+        height: 500px;   
+        justify-content: center;
+      }
+      .carousel-indicators [data-bs-target] {
+        background-color: black;
+      }
+      .carousel-control-prev [data-bs-target] {
+        background-color: black;
+        
+      }
+
+      .carousel-control-prev-icon {
+        &:hover{
+        background-color: rgba(0, 0, 0, 0.274);
+        }
+      }
+     
+      .carousel-control-next-icon {
+        &:hover{
+        background-color: rgba(0, 0, 0, 0.274);
+        }
+      }
+ }
+
+

@@ -1,0 +1,86 @@
+/* estilos de seccion más bendidos*/
+
+.carrusel {
+    display: flex;
+    margin: 20px 20px;
+    justify-content:space-evenly;
+    overflow-x: auto;
+
+      .product {
+         display: flex;
+         flex-direction: column;
+         width: fit-content;
+         height: 256px;
+         border-radius: 10px;
+         border: 1px solid rgb(175, 172, 172);
+         margin: 10px;
+         position: relative;
+
+            img {
+               width: 150px;;
+               height: 60%;
+               background-color: blue;
+               border-top-left-radius: 10px;
+               border-top-right-radius: 10px;
+            }
+
+            .precio_carrusel {
+               display: flex;
+               width: 50%;
+               height: 23px;
+               background-color: white;
+               position: absolute;
+               left: 0;
+               bottom: 40%;
+               border-top-left-radius: 5px;
+               border-top-right-radius: 5px;
+               justify-content: center;
+           }
+           
+           .nombre_producto {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 63px;
+            background-color: white;
+            width: 150px;
+
+           }
+         
+           
+           .mas_como_esto_boton {
+              display: flex;
+              width: 100%;
+              height: 39px;
+              position: absolute;
+              bottom: 0;
+              border-radius: 10px;
+              background-color: #069A06;
+              justify-content: center;
+              align-items: center;
+
+               p {
+                  font-family: inherit;
+                  font-weight: bold;
+                  -webkit-text-fill-color: white;
+                  margin-bottom: 0;
+               }
+
+               &:hover {
+                  background-color: #036903;
+               }
+               &:active {
+                  height: 36px;
+               }
+           }
+
+           &:hover{
+            border-color: white;
+            }
+
+           &:active{
+            border-color: black;
+            }
+      }
+ }
+
