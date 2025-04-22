@@ -1,0 +1,82 @@
+@use './variables' as *;
+
+.topbar {
+    display: flex;
+    background-color: $color1;
+    align-items: center;
+    padding: 1px;
+        img{
+            margin: 0 40px;
+            height: 40px;    
+        }
+        
+        div {
+        height: 40px;
+
+            p {
+                display: flex;
+                height: 40px;
+                font-family: "Playwrite IT Moderna";
+                font-style: italic;
+                font-weight: 400;
+                font-size:larger;
+                color: $color3;
+                align-items: center;
+                margin: 0;
+            }
+        }
+}
+
+
+
+
+
+nav {
+    display:flex;
+    background-color: $color4;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+        .dropdown {
+            display: none;
+        }
+
+        .categorias {
+            display: flex;
+            align-items: center;
+
+                ul {
+                    display: flex;
+                    list-style: none;
+                    justify-content: space-around;
+                    padding: 5px 0;
+                    width: 50vw;
+                    margin: 0;
+
+                        li {
+                            display: flex;
+                            text-align: center;
+                            align-items: center;
+                            &:hover{
+                                color: $color3;
+                            }
+                            &:active {
+                                font-weight: 200;
+                            }
+
+                        }
+                }
+        }
+
+        .carrito_icon{
+            display: flex;
+            position: absolute;
+            right: 15px;
+            top: 10%;
+            bottom: 10%;
+         }
+}
+
+ 

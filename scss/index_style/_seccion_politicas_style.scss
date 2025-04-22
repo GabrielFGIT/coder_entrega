@@ -1,0 +1,22 @@
+.politicas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+
+      article {
+         display: flex;
+         flex-direction: column;
+         width: 45%;
+         border: #cebc1957 solid 5px;
+
+            h1 {
+               padding: 10px;
+            }
+
+            p {
+               padding: 5px;
+               text-align: justify;
+            }
+      }
+ }
+ 

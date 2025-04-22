@@ -1,0 +1,88 @@
+/* diseño para tablet */
+
+@media (max-width: 1000px) {
+
+    .baner img{
+       width: 350px; 
+    } 
+  
+    .card {
+       flex-direction: column;
+    }
+    
+    .card .descripcion {
+       width: 80%;
+    }
+ 
+    h1 {
+       text-align: center;
+    }
+  
+ }
+ 
+ @media (max-width: 850px) {
+ 
+ 
+ 
+   .descuentos_section .descuentos #lastone {
+       width: 312px;
+       height: 324px;
+       font-size: X-large;
+    }
+ 
+    .card .card_images .main_picture {
+       width: 350px;
+       height: fit-content;
+       
+    }
+ 
+    .card .card_images .miniaturas img {
+       width: 80px;
+       height: 80px;
+    }
+ 
+ 
+ }
+ 
+ @media (max-width: 700px) {
+ 
+    nav {
+       justify-content: flex-start;
+       padding: 5px 10px;
+    }
+    
+    nav .dropdown{
+       display: flex;
+    }
+ 
+    nav .categorias{
+       display: none;
+    }
+ 
+    .descuentos_section .descuentos{
+       grid-template-columns: 1fr 1fr;
+    }
+    
+    .descuentos_section .descuentos .grid-item5 {
+       grid-column-start: 1;
+       grid-column-end: 3;
+       grid-row-start: 1;
+       grid-row-end: 3;
+    }
+ 
+    .descuentos_section .descuentos .oferta {
+       width: 156px;
+       height: 162px;
+    }
+ 
+    .politicas {
+       flex-direction: column;
+       margin: 10px;
+    }
+ 
+    .politicas article {
+       width: 100%;
+       margin: 10px 0;
+    }
+ 
+ }

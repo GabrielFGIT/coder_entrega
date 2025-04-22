@@ -1,0 +1,474 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(245, 240, 220);
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/* color1 es el color del top barr y los botones de las paginas de catalogo*/
+/* color2 es el color de los botones del index y el borde de las tarjetas en el index*/
+/* color3 es el color de el texto del titulo*/
+/* color4 es el color de la barra de navegacion y el footer*/
+.topbar {
+  display: flex;
+  background-color: #000000;
+  align-items: center;
+  padding: 1px;
+}
+.topbar img {
+  margin: 0 40px;
+  height: 40px;
+}
+.topbar div {
+  height: 40px;
+}
+.topbar div p {
+  display: flex;
+  height: 40px;
+  font-family: "Playwrite IT Moderna";
+  font-style: italic;
+  font-weight: 400;
+  font-size: larger;
+  color: #faebd7;
+  align-items: center;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  background-color: #D9D9D9;
+  height: fit-content;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+nav .dropdown {
+  display: none;
+}
+nav .categorias {
+  display: flex;
+  align-items: center;
+}
+nav .categorias ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 5px 0;
+  width: 50vw;
+  margin: 0;
+}
+nav .categorias ul li {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+nav .categorias ul li:hover {
+  color: #faebd7;
+}
+nav .categorias ul li:active {
+  font-weight: 200;
+}
+nav .carrito_icon {
+  display: flex;
+  position: absolute;
+  right: 15px;
+  top: 10%;
+  bottom: 10%;
+}
+
+.baner {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.baner img {
+  display: flex;
+  height: 500px;
+  justify-content: center;
+}
+.baner .carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+.baner .carousel-control-prev [data-bs-target] {
+  background-color: black;
+}
+.baner .carousel-control-prev-icon:hover {
+  background-color: rgba(0, 0, 0, 0.274);
+}
+.baner .carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.274);
+}
+
+.carrusel {
+  display: flex;
+  margin: 20px 20px;
+  justify-content: space-evenly;
+  overflow-x: auto;
+}
+.carrusel .product {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  height: 256px;
+  border-radius: 10px;
+  border: 1px solid #069A06;
+  margin: 10px;
+  position: relative;
+}
+.carrusel .product img {
+  width: 150px;
+  height: 60%;
+  background-color: blue;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.carrusel .product .precio_carrusel {
+  display: flex;
+  width: 50%;
+  height: 23px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 40%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  justify-content: center;
+}
+.carrusel .product .nombre_producto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 63px;
+  background-color: white;
+  width: 150px;
+}
+.carrusel .product .mas_como_esto_boton {
+  display: flex;
+  width: 100%;
+  height: 39px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  background-color: #069A06;
+  justify-content: center;
+  align-items: center;
+}
+.carrusel .product .mas_como_esto_boton p {
+  font-family: inherit;
+  font-weight: bold;
+  -webkit-text-fill-color: white;
+  margin-bottom: 0;
+}
+.carrusel .product .mas_como_esto_boton:hover {
+  background-color: #036903;
+}
+.carrusel .product .mas_como_esto_boton:active {
+  height: 36px;
+}
+.carrusel .product:hover {
+  border-color: white;
+}
+.carrusel .product:active {
+  border-color: #000000;
+}
+
+.descuentos_section {
+  display: flex;
+  justify-content: center;
+}
+.descuentos_section .descuentos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.descuentos_section .descuentos .oferta {
+  border: #069A06 solid 2px;
+  position: relative;
+  width: 206px;
+  height: 212px;
+  margin: 5px;
+}
+.descuentos_section .descuentos .oferta img {
+  background-color: aqua;
+  width: 100%;
+  height: 100%;
+}
+.descuentos_section .descuentos .oferta .precio {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2%;
+  height: 20%;
+  background-color: white;
+  border: black solid 2px;
+  left: 5%;
+  width: 40%;
+  justify-content: center;
+}
+.descuentos_section .descuentos .oferta .precio span {
+  text-decoration: line-through;
+}
+.descuentos_section .descuentos .oferta .off {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 2%;
+  background-color: white;
+  -webkit-text-fill-color: red;
+  font-weight: bolder;
+  width: 40%;
+  height: 20%;
+  left: 50%;
+  justify-content: center;
+  border: black solid 2px;
+  text-align: center;
+}
+.descuentos_section .descuentos .oferta:hover {
+  border-color: white;
+}
+.descuentos_section .descuentos .oferta:active {
+  border-color: #000000;
+}
+.descuentos_section .descuentos .grid-item5 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+.descuentos_section .descuentos #lastone {
+  width: 412px;
+  height: 424px;
+  font-size: Xx-large;
+}
+
+.politicas {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px;
+}
+.politicas article {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  border: rgba(206, 188, 25, 0.3411764706) solid 5px;
+}
+.politicas article h1 {
+  padding: 10px;
+}
+.politicas article p {
+  padding: 5px;
+  text-align: justify;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D9D9D9;
+  padding: 20px 20px;
+}
+footer div {
+  display: flex;
+  align-items: center;
+}
+footer div .signature {
+  font-style: italic;
+}
+footer div p {
+  padding: 0 10px;
+  margin-bottom: 0;
+}
+footer div img {
+  height: 50px;
+}
+
+/* aquí inician los estilos para pages*/
+.card {
+  display: flex;
+  margin: 70px 5%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.card .card_images {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.card .card_images .miniaturas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card .card_images .miniaturas img {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  background-color: gray;
+  border: beige solid 1px;
+}
+.card .card_images .miniaturas img:hover {
+  width: 98px;
+  height: 98px;
+}
+.card .card_images .miniaturas img:active {
+  border-color: #000000;
+}
+.card .card_images .main_picture {
+  display: flex;
+  margin: 10px;
+  width: 430px;
+  align-items: center;
+  justify-content: center;
+  background-color: gray;
+}
+.card .card_images .main_picture img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 100%;
+}
+.card .descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 460px;
+  width: 50%;
+  margin: 5px;
+}
+.card .descripcion ul {
+  list-style: square;
+  list-style-position: inside;
+  padding: 5px;
+}
+.card .descripcion .precio_card {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: larger;
+}
+.card .descripcion .precio_card .descuento {
+  -webkit-text-fill-color: red;
+  font-weight: bold;
+}
+.card .descripcion .botones {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card .descripcion .botones div {
+  display: flex;
+  height: 52px;
+  width: 45%;
+  background-color: #000000;
+  border-radius: 20px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.card .descripcion .botones div p {
+  -webkit-text-fill-color: #faebd7;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 0;
+}
+.card .descripcion .botones div:hover {
+  background-color: rgb(143, 142, 142);
+}
+.card .descripcion .botones div:active {
+  height: 44px;
+}
+.card .descripcion .botones div:active p {
+  font-size: large;
+}
+
+/* diseño para tablet */
+@media (max-width: 1000px) {
+  .baner img {
+    width: 350px;
+  }
+  .card {
+    flex-direction: column;
+  }
+  .card .descripcion {
+    width: 80%;
+  }
+  h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 850px) {
+  .descuentos_section .descuentos #lastone {
+    width: 312px;
+    height: 324px;
+    font-size: X-large;
+  }
+  .card .card_images .main_picture {
+    width: 350px;
+    height: fit-content;
+  }
+  .card .card_images .miniaturas img {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (max-width: 700px) {
+  nav {
+    justify-content: flex-start;
+    padding: 5px 10px;
+  }
+  nav .dropdown {
+    display: flex;
+  }
+  nav .categorias {
+    display: none;
+  }
+  .descuentos_section .descuentos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .descuentos_section .descuentos .grid-item5 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  .descuentos_section .descuentos .oferta {
+    width: 156px;
+    height: 162px;
+  }
+  .politicas {
+    flex-direction: column;
+    margin: 10px;
+  }
+  .politicas article {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* diseño para movil */
+@media (max-width: 500px) {
+  .baner img {
+    height: 250px;
+  }
+  .card .card_images .main_picture {
+    width: 300px;
+  }
+  .miniaturas img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
