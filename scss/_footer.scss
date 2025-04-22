@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @use './variables' as *;
 
 
@@ -32,4 +33,37 @@ footer {
 
  
  
+=======
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9;
+    padding: 20px 20px;
+
+      div {
+         display: flex;
+         align-items: center;
+
+            .signature{
+               font-style: italic;
+            }
+
+            p {
+               padding: 0 10px;
+               margin-bottom: 0;
+            }
+
+            img {
+               height: 50px;
+            }
+      }
+ }
+ 
+ 
+ 
+
+ 
+ 
+>>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
  

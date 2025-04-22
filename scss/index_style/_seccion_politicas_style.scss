@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .politicas {
     display: flex;
     justify-content: space-evenly;
@@ -19,4 +20,27 @@
             }
       }
  }
+=======
+.politicas {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px;
+
+      article {
+         display: flex;
+         flex-direction: column;
+         width: 45%;
+         border: #cebc1957 solid 5px;
+
+            h1 {
+               padding: 10px;
+            }
+
+            p {
+               padding: 5px;
+               text-align: justify;
+            }
+      }
+ }
+>>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
  
