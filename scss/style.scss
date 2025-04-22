@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @use'./default_general';
 @use'./variables';
 
@@ -16,21 +15,3 @@
 @use'./media_querys/tablet_querys';
 @use'./media_querys/movil_querys';
 
-=======
-@use 'default_general';
-@use 'header';
-
-@use 'index_style/banner_style';
-@use 'index_style/seccion_mas_vendidos_style';
-@use 'index_style/seccion_descuentos_style';
-@use 'index_style/seccion_politicas_style';
-
-@use 'footer';
-
-@use 'catalog_style/card_style';
-
-@use 'media_querys/tablet_querys';
-@use 'media_querys/movil_querys';
-
-
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9

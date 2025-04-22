@@ -13,7 +13,6 @@ a {
   color: currentColor;
 }
 
-<<<<<<< HEAD
 /* color1 es el color del top barr y los botones de las paginas de catalogo*/
 /* color2 es el color de los botones del index y el borde de las tarjetas en el index*/
 /* color3 es el color de el texto del titulo*/
@@ -21,11 +20,6 @@ a {
 .topbar {
   display: flex;
   background-color: #000000;
-=======
-.topbar {
-  display: flex;
-  background-color: black;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   align-items: center;
   padding: 1px;
 }
@@ -43,11 +37,7 @@ a {
   font-style: italic;
   font-weight: 400;
   font-size: larger;
-<<<<<<< HEAD
   color: #faebd7;
-=======
-  color: antiquewhite;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   align-items: center;
   margin: 0;
 }
@@ -81,11 +71,7 @@ nav .categorias ul li {
   align-items: center;
 }
 nav .categorias ul li:hover {
-<<<<<<< HEAD
   color: #faebd7;
-=======
-  color: white;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 }
 nav .categorias ul li:active {
   font-weight: 200;
@@ -121,10 +107,6 @@ nav .carrito_icon {
   background-color: rgba(0, 0, 0, 0.274);
 }
 
-<<<<<<< HEAD
-=======
-/* estilos de seccion más bendidos*/
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 .carrusel {
   display: flex;
   margin: 20px 20px;
@@ -137,11 +119,7 @@ nav .carrito_icon {
   width: fit-content;
   height: 256px;
   border-radius: 10px;
-<<<<<<< HEAD
   border: 1px solid #069A06;
-=======
-  border: 1px solid rgb(175, 172, 172);
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   margin: 10px;
   position: relative;
 }
@@ -199,16 +177,9 @@ nav .carrito_icon {
   border-color: white;
 }
 .carrusel .product:active {
-<<<<<<< HEAD
   border-color: #000000;
 }
 
-=======
-  border-color: black;
-}
-
-/* estilos seccion de descuentos*/
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 .descuentos_section {
   display: flex;
   justify-content: center;
@@ -265,11 +236,7 @@ nav .carrito_icon {
   border-color: white;
 }
 .descuentos_section .descuentos .oferta:active {
-<<<<<<< HEAD
   border-color: #000000;
-=======
-  border-color: black;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 }
 .descuentos_section .descuentos .grid-item5 {
   grid-column-start: 3;
@@ -346,11 +313,8 @@ footer div img {
   display: flex;
   width: 100px;
   height: 100px;
-<<<<<<< HEAD
   align-items: center;
   justify-content: center;
-=======
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   margin: 5px;
   background-color: gray;
   border: beige solid 1px;
@@ -360,34 +324,22 @@ footer div img {
   height: 98px;
 }
 .card .card_images .miniaturas img:active {
-<<<<<<< HEAD
   border-color: #000000;
-=======
-  border-color: black;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 }
 .card .card_images .main_picture {
   display: flex;
   margin: 10px;
   width: 430px;
-<<<<<<< HEAD
   align-items: center;
   justify-content: center;
-=======
-  height: 430px;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   background-color: gray;
 }
 .card .card_images .main_picture img {
   display: flex;
-<<<<<<< HEAD
   align-items: center;
   justify-content: center;
   max-width: 100%;
   max-height: 100%;
-=======
-  height: 100%;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
 }
 .card .descripcion {
   display: flex;
@@ -420,22 +372,14 @@ footer div img {
   display: flex;
   height: 52px;
   width: 45%;
-<<<<<<< HEAD
   background-color: #000000;
-=======
-  background-color: black;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   border-radius: 20px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 .card .descripcion .botones div p {
-<<<<<<< HEAD
   -webkit-text-fill-color: #faebd7;
-=======
-  -webkit-text-fill-color: white;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   margin-bottom: 0;
@@ -453,11 +397,7 @@ footer div img {
 /* diseño para tablet */
 @media (max-width: 1000px) {
   .baner img {
-<<<<<<< HEAD
     width: 350px;
-=======
-    height: 350px;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   }
   .card {
     flex-direction: column;
@@ -477,11 +417,7 @@ footer div img {
   }
   .card .card_images .main_picture {
     width: 350px;
-<<<<<<< HEAD
     height: fit-content;
-=======
-    height: 350px;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   }
   .card .card_images .miniaturas img {
     width: 80px;
@@ -528,10 +464,6 @@ footer div img {
   }
   .card .card_images .main_picture {
     width: 300px;
-<<<<<<< HEAD
-=======
-    height: 300px;
->>>>>>> 35b474ecdeeff5ddc22d09fb4c64efdc25ea5ae9
   }
   .miniaturas img {
     width: 70px;
